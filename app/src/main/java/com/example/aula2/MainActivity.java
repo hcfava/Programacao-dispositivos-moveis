@@ -66,6 +66,10 @@ public class MainActivity extends AppCompatActivity{
     public void click1(View view) {
 
         String valorDigitado = editText.getText().toString();
+        if(valorDigitado.isEmpty()){
+            return;
+        }
+
         Intent intent = new Intent(getApplicationContext(), OutraActivity.class);
         intent.putExtra("celcius", valorDigitado);
         startActivity(intent);
