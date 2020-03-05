@@ -10,15 +10,18 @@ import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity{
 
-    int i = 0;
+    private EditText editText;
 
     @Override
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        editText = findViewById(R.id.editText);
 
 
         Log.d("CICLO", "onCreate");
@@ -61,7 +64,10 @@ public class MainActivity extends AppCompatActivity{
     }
 
     public void click1(View view) {
+
+        String valorDigitado = editText.getText().toString();
         Intent intent = new Intent(getApplicationContext(), OutraActivity.class);
+        intent.putExtra("celcius", valorDigitado);
         startActivity(intent);
     }
 }
