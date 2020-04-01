@@ -74,4 +74,8 @@ public class MainActivity extends AppCompatActivity{
         intent.putExtra("celcius", valorDigitado);
         startActivity(intent);
     }
+
+    public void exercicio4click(View view) {
+        startActivity(new Intent(this,ActivityEx4.class));
+    }
 }
