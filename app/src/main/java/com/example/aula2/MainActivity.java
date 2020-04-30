@@ -27,42 +27,6 @@ public class MainActivity extends AppCompatActivity{
         Log.d("CICLO", "onCreate");
     }
 
-    @Override
-    protected void onStart() {
-        super.onStart();
-        Log.d("CICLO", "onStart");
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-        Log.d("CICLO", "onResume");
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-        Log.d("CICLO", "onPause");
-    }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-        Log.d("CICLO", "onStop");
-    }
-
-    @Override
-    protected void onRestart() {
-        super.onRestart();
-        Log.d("CICLO", "onRestart");
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        Log.d("CICLO", "onDestroy");
-    }
-
     public void click1(View view) {
 
         String valorDigitado = editText.getText().toString();
@@ -78,4 +42,10 @@ public class MainActivity extends AppCompatActivity{
     public void exercicio4click(View view) {
         startActivity(new Intent(this,ActivityEx4.class));
     }
+
+    public void exercicio61click(View view) {startActivity(new Intent(this,ActivityEx61.class));}
+
+    public void exercicio62click(View view) {startActivity(new Intent(this,ActivityEx62.class));}
+
+
 }
