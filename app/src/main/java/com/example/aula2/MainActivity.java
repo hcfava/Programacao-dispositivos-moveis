@@ -48,4 +48,5 @@ public class MainActivity extends AppCompatActivity{
     public void exercicio62click(View view) {startActivity(new Intent(this,ActivityEx62.class));}
 
 
+    public void exercicio7click(View view) {startActivity(new Intent(this,ActivityEx7.class));}
 }
