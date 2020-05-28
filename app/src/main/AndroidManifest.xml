@@ -16,7 +16,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ActivityEx8"></activity>
+        <activity android:name=".Aula9Map"></activity>
+        <activity android:name=".Aula9GpsActivity" />
+        <activity android:name=".ActivityEx9" />
+        <activity android:name=".ActivityEx8" />
         <activity android:name=".Aula8AddActivity" />
         <activity android:name=".Aula8UDActivity" />
         <activity android:name=".Aula8SelActivity" />

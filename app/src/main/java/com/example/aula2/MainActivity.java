@@ -52,4 +52,6 @@ public class MainActivity extends AppCompatActivity{
     public void selClick(View view) { startActivity(new Intent(this,Aula8SelActivity.class)); }
 
     public void exercicio8click(View view) {startActivity(new Intent(this,ActivityEx8.class));}
+
+    public void exercicio9click(View view) {startActivity(new Intent(this,ActivityEx9.class));}
 }
